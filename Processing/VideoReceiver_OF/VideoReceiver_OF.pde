@@ -37,20 +37,6 @@ void checkForImage() {
   DatagramPacket p = new DatagramPacket(buffer, buffer.length); 
   try {
     ds.receive(p);
-    //String str = new String(buffer);
-    //if (str.split("<")[0].equals("S")) {
-
-    //  int size = int(str.split("<")[1]);
-    //  byte[] nBuff = new byte[size]; 
-
-    //  p = new DatagramPacket(nBuff, nBuff.length); 
-    //  try {
-    //    ds.receive(p);
-    //  } 
-    //  catch (IOException e) {
-    //    e.printStackTrace();
-    //  }
-    //}
   } 
   catch (IOException e) {
     e.printStackTrace();
